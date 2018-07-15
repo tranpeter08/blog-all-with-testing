@@ -1,4 +1,12 @@
 language: node_js
 node_js: node
-services: 
+services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: YTCJGdyZJTvucV+iNxSDBTKFv4Zu7VOhbxfGYWYOYWuTAhiNjWrOgNhg2n/OqwURbD5UwhhW7qq4zgoUXL+HXHqZLP4dsx07pKienm8QiBcdOBTU0NiWDkeWo9sxbP9Fe2PA9WUnOt87e13xNSvHquoAZAvF2Np2+dKZtzB9kwOT8tBsftEVxOp1dtMbmglkJiY+qur4Rl2vYn9c9ydTBRYweEYCwlF1L9UN7pPm7jKmPhx59nUozBpO1qIulPwZry5RLpqlsSTxjiuCkaSorrgB8WOpQEsxhUyvXykSTLQM3nrmNBgN4qGNv6ZZFvE0gxJF73zl7YkkWuRRL8RLKk7bYhCffVw5aDO6iJazW13jDSXIhcwO4/D2K5LfnQDsBlxNCZWne/3sLRu2iqUaK32SesflrALPpM8aWCFuyM862AYQTixuFK8YFkmkqPjWlKEBvexC2l1q+kNefiaEI4gGiBBDw1YgTswUgAolkjl9QMLC27sf5jTghry2q2vcKacybsIdP5sHJNlrikdfXpUGSdfDwYJbm1qbIhdtCHGQjj+K/eY2Wra/VA2+fftgVWYKDgJoPODN73Fcvbw/G4r92dfx5Ka5+4yezOYuNqLOiNbu7NN8XMabuIcv+D55JtyrXRA0rgiNJhlp7wT6IbfJcuyMdNGTwp2F6RgXpXQ=
+  app: blog-all-with-testing
+  on:
+    repo: tranpeter08/blog-all-with-testing
+    branch: feature/tests
